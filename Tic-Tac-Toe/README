@@ -1,0 +1,4 @@
+compiler of the project: gcc
+operating system: Linux (ubuntu)
+command for compiling: make clean; make
+command for running: ./main (name of the input puzzle file)
