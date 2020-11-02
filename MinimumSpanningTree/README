@@ -1,31 +1,0 @@
-You are to implement either Prim's or Kruskal's algorithm for finding a Minimum Spanning Tree
-(MST) of an undirected multi-graph, and evaluate its running time performance on a set of graph
-instances. The 13 input graphs are RMAT graphs [?], which are synthetic graphs with power-law
-degree distributions and small-world characteristics. Please note that, there might be multiple edges
-between vertices, you just treat them like they are different edges (i.e., do not sum up the weights, or
-randomly pick one edge).
-3.1 Static Computation
-The firrst part of the assignment entails coding either Prim's or Kruskal's algorithm to find the cost
-of an MST given a graph file. You may use the programming language of your choice (C/C++, Java
-or Python). We provide a wrapper function in all three languages to help you get started with the
-assignment. You may call your own functions inside the wrapper. We also have implemented a timer
-in the wrapper that records the running time of your algorithms. To implement these algorithms, you
-may make use of data structure implementations in the programming language of your choice; e.g. in
-python, the heapq library may be used for implementing priority queues and set operations may be
-used for implementing the union-nd data structure. In Java, java.util.PriorityQueue may be used for
-implementing priority queues and java.util.Set may be used for set operations.
-The `graph le' format is as follows:
-Line 1: N E (N = number of vertices, E = number of edges)
-Every subsequent line contains three integers: u v weight (u &v are end points of edge, weight =
-weight of edge between u and v. Please note each undirected edge is only listed once in the le.)
-The MST calculation is to be implemented in the computeMST function, as indicated in the wrapper
-code.
-3.2 Dynamic Recomputation
-The next part of the assignment requires you to update the cost of the MST given new edges to be
-added to the graph. You are provided with a `changes file' and the format is as follows:
-Line 1: N (N = number of changes/edges to be added)
-Every subsequent line contains three integers: u v weight (u & v are end points of the new edge
-to be added, weight = weight of edge between u and v)
-You are to implement the function recomputeMST as indicated in the wrapper code that computes the
-new MST given the new edge to be added into the graph. You are responsible for maintaining the old
-MST before recomputing.
