@@ -1,0 +1,7 @@
+compiler of the project: gcc
+operating system: Linux (ubuntu)
+command for compiling: make clean; make
+command for running main_generate:  
+./main_generate (num_of_row) (num_of_col) (file_name.txt)
+command for running main_solve:  
+./main_solve (file_name.txt)
